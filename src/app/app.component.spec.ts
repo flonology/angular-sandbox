@@ -16,12 +16,12 @@ describe('AppComponent', () => {
   it(`should have as title 'angular-sandbox'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-sandbox');
+    expect(app.title).toEqual('My Angular Sandbox');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-sandbox!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to My Angular Sandbox!');
   }));
 });
